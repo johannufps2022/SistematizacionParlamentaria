@@ -23,4 +23,22 @@ public class Partido {
     this.nombre=nombre;
     this.creacion=creacion;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCreacion() {
+        return creacion;
+    }
+
+    public void setCreacion(String creacion) {
+        this.creacion = creacion;
+    }
+   
+   
 }

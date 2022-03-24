@@ -23,4 +23,22 @@ public class Departamento {
         this.nombre=nombre; 
         this.curul=curul;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getCurul() {
+        return curul;
+    }
+
+    public void setCurul(Integer curul) {
+        this.curul = curul;
+    }
+    
+    
 }

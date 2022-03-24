@@ -29,4 +29,5 @@ public class Camara extends Candidato{
        this.departamento=departamento;
     }
     
+    
 }
