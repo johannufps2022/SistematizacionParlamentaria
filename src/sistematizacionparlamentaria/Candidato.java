@@ -9,7 +9,7 @@ package sistematizacionparlamentaria;
  *
  * @author estudiante
  */
-public class Candidato {
+abstract class Candidato  {
     
     private String nombre;
     private String documento;
@@ -30,8 +30,60 @@ public class Candidato {
         this.email=email;
         this.telefono=telefono;
         this.genero=genero;
-        this.partido=p;
-       
-            
+        this.partido=p;       
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public Partido getPartido() {
+        return partido;
+    }
+
+    public void setPartido(Partido partido) {
+        this.partido = partido;
+    }
+    
+    abstract public  void registrarVoto();
+  
+    abstract public Float calcularPorcentajeVotos();
+    
+    abstract public void validarNumero();
 }

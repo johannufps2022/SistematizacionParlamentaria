@@ -52,5 +52,38 @@ public class Senado extends Candidato{
         this.voto = voto;
     }
     
+    @Override
+    public void validarNumero()
+    {
+        if (this.numero >=1 && this.numero <=100){
+    
+        System.out.println("El numéro corresponde a la lista del senado");}
+        else 
+           { System.out.println("El numéro no corresponde a la lista del senado");}
+    }
+    
+    @Override
+    public void registrarVoto()
+    {
+        voto++;
+        votos++;   
+     }
+    
+    @Override
+    public Float calcularPorcentajeVotos(){
+    
+        return (float) 100*this.voto/this.votos;
+    }
+   
+    
+    public void imprimirDatos()
+    {
+        System.out.println("El partido político del candidato al senado es:"+this.getPartido().getNombre());
+        System.out.println("El nombre del candidato al senado es:"+getNombre());
+        System.out.println("El documento del candidato al senado es: "+getDocumento());
+        System.out.println("El email del candidato al senado es: "+getEmail());
+        System.out.println("El numero del candidato al senado es: "+getNumero());
+        System.out.println("El numero de votos del candidato al senado es: "+voto);
+    }
     
 }

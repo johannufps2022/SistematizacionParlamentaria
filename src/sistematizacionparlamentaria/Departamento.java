@@ -10,8 +10,8 @@ package sistematizacionparlamentaria;
  * @author estudiante
  */
 public class Departamento {
-    String nombre;
-    Integer curul;
+    private String nombre;
+    private Integer curul;
     
     public Departamento()
     {
